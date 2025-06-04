@@ -15,6 +15,8 @@ from src.processing import filter_by_state, sort_by_date
         )
     ],
 )
+
+
 def test_filter_by_state(value, state):
     assert filter_by_state(value) == state
 
@@ -34,5 +36,7 @@ def test_filter_by_state(value, state):
         )
     ],
 )
+
+
 def test_sort_by_date(value, date):
     assert sort_by_date(value) == date

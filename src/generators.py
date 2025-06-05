@@ -54,9 +54,12 @@ def filter_by_currency(transactions, code="USD"):
             yield t
 
 
+
+
+
 usd_transactions = filter_by_currency(transactions, "USD")
 
-for _ in range(2):
+for _ in range(3):
     print(next(usd_transactions))
 
 
@@ -64,7 +67,7 @@ print("________________________")
 
 
 def transaction_descriptions(transactions):
-    """Определение транзакции по типу перевода"""
+    """Вывод типов перевода в транзакциях"""
     for t in transactions:
         if "description" in t:
             yield t["description"]

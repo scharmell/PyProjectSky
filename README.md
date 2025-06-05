@@ -7,8 +7,16 @@
 [Также осуществляется сортиравка принимаемых списков словарей по статусу и дате операций.](src/processing.py)
 
 *Проект реализуется с помощью нескольких функций:*
+
 [src/masks.py](src/masks.py)
 
 [src/widget.py](src/widget.py)
 
 [src/processing.py](src/processing.py)
+
+[src/generators.py](src/generators.py)
+
+
+*<u>Отчет о % покрытии тестами выше-указанных функций:<u/>*
+![img.png](img.png)
+

@@ -54,9 +54,6 @@ def filter_by_currency(transactions, code="USD"):
             yield t
 
 
-
-
-
 usd_transactions = filter_by_currency(transactions, "USD")
 
 for _ in range(3):
@@ -86,7 +83,7 @@ def card_number_generator(start=1, end=9999999999999999):
     """Генерация номеров карт в формате XXXX XXXX XXXX XXXX"""
     for number in range(start, end + 1):
         card_num_zero = str(number).zfill(16)
-        divide_by_four = [card_num_zero[i : i + 4] for i in range(0, 16, 4)]
+        divide_by_four = [card_num_zero[i:i + 4] for i in range(0, 16, 4)]
         united = " ".join(divide_by_four)
         yield united
 
